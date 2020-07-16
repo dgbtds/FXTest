@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="532.0" prefWidth="626.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chartTest.PieChartController">
+  <children>
+    <PieChart fx:id="pieChart" layoutX="99.0" layoutY="88.0" prefHeight="430.0" prefWidth="502.0" />
+    <Button fx:id="change" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#changeClicked" prefHeight="26.0" prefWidth="74.0" text="Change" />
+    <Button fx:id="barChartButton" layoutX="155.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#barChartButtonClicked" prefHeight="26.0" prefWidth="86.0" text="BarChart" />
+  </children>
+</AnchorPane>

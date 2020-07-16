@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="831.0" prefWidth="1068.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chartTest.BarChartController">
+  <children>
+    <HBox layoutX="53.0" layoutY="22.0" prefHeight="346.0" prefWidth="946.0">
+      <children>
+        <BarChart id="" fx:id="barChart" prefHeight="398.0" prefWidth="398.0">
+          <xAxis>
+            <CategoryAxis fx:id="categoryAxis1" side="BOTTOM" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis fx:id="numberAxis1" side="LEFT" />
+          </yAxis>
+        </BarChart>
+        <LineChart id="LineChartNxN" fx:id="LineChart" prefHeight="398.0" prefWidth="425.0">
+          <xAxis>
+            <NumberAxis fx:id="LineChartX" autoRanging="false" lowerBound="1995.0" prefWidth="408.0" side="BOTTOM" tickUnit="5.0" upperBound="2020.0" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis fx:id="LineChartY" side="LEFT" />
+          </yAxis>
+        </LineChart>
+      </children>
+    </HBox>
+    <HBox layoutX="72.0" layoutY="480.0" prefHeight="337.0" prefWidth="891.0">
+      <children>
+        <LineChart id="LineChartNxN" fx:id="dynamicLineChart" animated="false" prefHeight="337.0" prefWidth="877.0">
+          <xAxis>
+            <NumberAxis fx:id="dynamicLineChartX" autoRanging="false" side="BOTTOM" tickUnit="5.0" upperBound="20.0" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis id="dynamicLineChartX" fx:id="dynamicLineChartY" animated="false" side="LEFT" />
+          </yAxis>
+        </LineChart>
+      </children>
+    </HBox>
+    <Button fx:id="monitor" layoutX="164.0" layoutY="406.0" mnemonicParsing="false" onAction="#monitorAction" prefHeight="37.0" prefWidth="86.0" text="监控" />
+    <Button fx:id="pause" layoutX="298.0" layoutY="406.0" mnemonicParsing="false" onAction="#pauseAction" prefHeight="37.0" prefWidth="86.0" text="暂停" />
+  </children>
+</AnchorPane>
